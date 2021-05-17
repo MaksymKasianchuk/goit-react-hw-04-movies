@@ -1,0 +1,44 @@
+// Стили компонента кнопки Load more
+@import '../../variables.module.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+
+  // min-width: 180px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+
+  // color: rgb(0, 0, 0);
+  background-color: cyan;
+  box-shadow: $box-shadow;
+
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 500;
+
+  // opacity: 1;
+
+  transition: all $transition-duration $transition-timing;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    // opacity: 0.8;
+    color: cyan;
+    background-color: transparent;
+    border: 1px solid cyan;
+  }
+}

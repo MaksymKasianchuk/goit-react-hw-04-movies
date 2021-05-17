@@ -1,0 +1,41 @@
+// Стили списка фильмов
+@import '../../variables.module.scss';
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -20px;
+  margin-top: -20px;
+  padding: 20px 0;
+}
+
+.item {
+  flex-basis: calc(100% / 2 - 20px);
+  margin-left: 20px;
+  margin-top: 20px;
+
+  transform: scale(1);
+
+  &:hover,
+  &:focus {
+    color: cyan;
+    transform: scale(1.05);
+
+    transition: all $transition-duration $transition-timing;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1169px) {
+    flex-basis: calc(100% / 3 - 20px);
+  }
+
+  @media screen and (min-width: 1170px) {
+    flex-basis: calc(100% / 4 - 20px);
+  }
+}
+
+.link {
+  color: inherit;
+
+  text-decoration: none;
+}

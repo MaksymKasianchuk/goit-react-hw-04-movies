@@ -1,0 +1,26 @@
+// Стили блока актёров
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -20px;
+}
+
+.item {
+  flex-basis: calc(100% / 2 - 20px);
+  margin-left: 20px;
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(100% / 4 - 20px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - 20px);
+  }
+}
+.castError {
+  color: rgb(202, 23, 23);
+  font-size: 18px;
+}

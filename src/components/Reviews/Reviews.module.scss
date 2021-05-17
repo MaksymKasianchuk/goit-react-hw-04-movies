@@ -1,0 +1,24 @@
+// Стили блока обзоров к фильму
+
+.list {
+  margin-bottom: 20px;
+}
+
+.item {
+  padding: 20px;
+  border-radius: 5px;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  color: rgb(211, 204, 204);
+  border: 1px solid rgb(100, 99, 99);
+
+  background-color: rgb(107, 105, 105);
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.revError {
+  color: rgb(163, 68, 68);
+  font-size: 18px;
+}

@@ -1,0 +1,35 @@
+// Стили навигации по актёрам и отзывам на странице фильма
+@import '../../variables.module.scss';
+
+.list {
+  display: flex;
+}
+.info {
+  color: cyan;
+}
+
+.item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  color: cyan;
+  text-transform: uppercase;
+  text-decoration: none;
+ transition: all 250ms linear;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &--active {
+    color: cyan;
+    // text-decoration: underline;
+    font-weight: 500;
+
+  }
+}

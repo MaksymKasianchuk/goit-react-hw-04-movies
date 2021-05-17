@@ -1,0 +1,89 @@
+// Стили фильма
+@import '../../variables.module.scss';
+
+.article {
+  position: relative;
+  color: cyan;
+  letter-spacing: 2px;
+
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.score {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.vote {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  background-color: $secondary-color;
+
+  &--top {
+    @extend .vote;
+    background-color: cyan;
+  }
+
+  &--low {
+    @extend .vote;
+    background-color: tomato;
+  }
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.thumb {
+  margin-bottom: 20px;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+.poster {
+  height: auto;
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 300px;
+  }
+}
+
+.label {
+  margin-right: 5px;
+}
+
+.genresList {
+  margin-top: 10px;
+}
+
+.genresItem {
+  display: flex;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+&::before {
+    content: '-';
+
+    margin-right: 5px;
+
+  }
+}
+.overview {
+line-height: 1.6;
+}
